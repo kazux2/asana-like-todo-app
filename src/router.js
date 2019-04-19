@@ -23,6 +23,11 @@ export default new Router({
       path: '/playground',
       name: 'playground',
       component: () => import(/* webpackChunkName: "about" */ './views/Playground.vue')
+    },
+    {
+      path: '/draggable',
+      name: 'draggable',
+      component: () => import(/* webpackChunkName: "about" */ './views/Draggable.vue')
     }
   ]
 })
